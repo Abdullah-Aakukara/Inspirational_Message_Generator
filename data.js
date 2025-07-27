@@ -1,7 +1,17 @@
-    objectStrings = ['I', 'Me', 'You', 'We', 'They', 'She', 'He']
-    verbStrings =  ['can', 'will', 'must', 'shall', 'can\'t', 'willn\'t'] 
-    subjectStrings =  ['CRACK-IT', 'SQWEEZE-IT', 'F*CK-IT']
+const objectStrings = [
+  'You', 'We', 'Your mind', 'Your heart', 'Your spirit', 'Your dreams', 'Your potential'
+];
 
-module.exports.objectStrings = objectStrings;
-module.exports.verbStrings = verbStrings;
-module.exports.subjectStrings = subjectStrings;
+const verbStrings = [
+  'can achieve', 'will conquer', 'must pursue', 'should embrace', 'can overcome', 'will discover', 'must ignite'
+];
+
+const subjectStrings = [
+  'greatness', 'new horizons', 'your goals', 'the impossible', 'your destiny', 'success', 'your passion'
+];
+
+module.exports = {
+  objectStrings,
+  verbStrings,
+  subjectStrings
+};
