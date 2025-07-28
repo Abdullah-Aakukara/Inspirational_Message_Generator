@@ -14,4 +14,4 @@ module.exports = {
   objectStrings,
   verbStrings,
   subjectStrings
-};
+}; 
