@@ -1,18 +1,12 @@
-const objectOfstrings = require('./data.js')
+import { verbStrings, subjectStrings, objectStrings } from "./data.js";
 console.log("Hello, \nHere's your today's Message!");
+
 // helper function to return random index num
-let randomIndex = (num) => {
-    return Math.floor(Math.random() * num)
-}
-let arrOfStrings = [];
-// iterating through the object 
-for (const key in objectOfstrings) {
-    if (Array.isArray(objectOfstrings[key])) {
-        let index = randomIndex(objectOfstrings[key].length);
-        arrOfStrings.push(objectOfstrings[key][index]);
-    }
-}
-let message = arrOfStrings.join(' ');
+let randomIndex = (num => Math.floor(Math.random() * num));
+
+let randomObject = objectStrings[randomIndex(objectStrings.length)];
+let randomVerb = verbStrings[randomIndex(verbStrings.length)];
+let randomSubject = subjectStrings[randomIndex(subjectStrings.length)];
+let message = `${randomObject} ${randomVerb} ${randomSubject}`;
+
 console.log(message);
-
-

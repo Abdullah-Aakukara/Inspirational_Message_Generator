@@ -10,8 +10,8 @@ const subjectStrings = [
   'greatness', 'new horizons', 'your goals', 'the impossible', 'your destiny', 'success', 'your passion'
 ];
 
-module.exports = {
+export {
   objectStrings,
   verbStrings,
   subjectStrings
-}; 
+}
